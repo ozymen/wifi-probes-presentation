@@ -1,0 +1,20 @@
+{
+  "name": "wifi-probes-presentation",
+  "version": "1.0.0",
+  "description": "This tool provides a live word cloud of wifi probes collected by aircrack-ng. It can be embedded in presentations to interest people about privacy.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://code.bof.nl/BitsOfGroningen/wifi-probes-presentation.git"
+  },
+  "author": "Rutger Prins",
+  "license": "ISC",
+  "dependencies": {
+    "connect": "^3.6.0",
+    "serve-static": "^1.12.0"
+  }
+}
