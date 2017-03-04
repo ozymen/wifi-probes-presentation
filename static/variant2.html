@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/custom2.css">
+
+    <script src="js/jquery-3.1.1.slim.js"></script>
+    <script src="js/d3.js"></script>
+    <script src="js/d3.layout.cloud.js"></script>
+</head>
+<body>
+
+<div class="example3">
+
+
+</div>
+
+
+<script type="text/javascript">
+
+    /**
+     * Shuffles array in place.
+     * @param {Array} a items The array containing the items.
+     */
+    function shuffle(a) {
+        var j, x, i;
+        for (i = a.length; i; i--) {
+            j = Math.floor(Math.random() * i);
+            x = a[i - 1];
+            a[i - 1] = a[j];
+            a[j] = x;
+        }
+    }
+
+var examples = ['hanzeguest',
+    'EZCastec-59EFF47E',
+    'eduroam',
+    'LVEK_WIFI_NETWORK',
+    'LVEK_GUEST_NETWORK',
+    'rug-guest',
+    'QbuzzWIFI',
+    'TKB-public',
+    'violeta',
+    'KPN Fon',
+    'H6',
+    'Ziggo',
+    'Starbucks',
+    'WiFi-Lentis',
+    'wifi in de trein'];
+
+    examples = examples.concat(examples)
+    examples = examples.concat(examples)
+    examples = examples.concat(examples)
+
+
+$(document).ready(function() {
+    var height = $(window).height();
+
+    var n = Math.floor(height/80)+1;
+
+    //examples = shuffle(examples);
+    console.log(examples);
+
+    var p = 0;
+    for (i = 0; i <= n; i++) {
+        text = examples[p]
+        p += 1
+
+        if (text.length + examples[p].length < 45) {
+            text += "&nbsp;&nbsp;&nbsp;&nbsp;" + examples[p]
+            p += 1
+        }
+
+        if (text.length + examples[p].length < 45+23) {
+            text += "&nbsp;&nbsp;&nbsp;&nbsp;" + examples[p]
+            p += 1
+        }
+
+        if (text.length + examples[p].length < 45+23+23) {
+            text += "&nbsp;&nbsp;&nbsp;&nbsp;" + examples[p]
+            p += 1
+        }
+
+        $('.example3').append("<div class=\"toscroll\" style=\"animation-delay: " + (i+1) + "s;\"><h3 class=\"old\">" + text+ "</h3></div>");
+    }
+});
+</script>
+
+</body>
+
+</html>

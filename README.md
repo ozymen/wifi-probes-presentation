@@ -11,9 +11,24 @@ It can be embedded in presentations to interest people about privacy.
 
 This tool will not store any data on the long run, other than temporary for showing the word cloud.
 
-## How to install and run
+## How to install
+
+Clone this repository.
+
+``git clone ... ``
+
 ``npm install``
 
+## How to run
+
+Find yoir wireless network interface name using `ifconfig`. In this example, the interface name is `wlxe894f61c0f5a`.
+
+Start the monitoring of the interface.
+``sudo airmon-ng start wlxe894f61c0f5a 1``
+
+``sudo airodump-ng mon0``
+
+Start the webserver.
 ``node server.js``
 
 ## How to embed in PowerPoint
