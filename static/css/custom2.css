@@ -24,6 +24,24 @@ h3 {
     text-align-last: justify;*/
 }
 
+.disclaimer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background: #3c4d65;
+    text-align: center;
+    padding: 13px 0;
+    color: white;
+    opacity: 0.8;
+
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e5e5e5+0,3c4d65+100 */
+background: #e5e5e5; /* Old browsers */
+background: -moz-linear-gradient(top, rgba(0, 0,0 , 0) 0%, #3c4d65 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(0, 0,0 , 0) 0%,#3c4d65 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(0, 0,0 , 0) 0%,#3c4d65 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+}
+
 /* Animation */
 .example3 {
     height: 100%;
