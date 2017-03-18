@@ -9,9 +9,10 @@ if (file_exists('probes.json')) {
 }
 
 $contents = file_get_contents($_FILES['image']['tmp_name']);
+var_dump($_FILES);
 
 preg_match_all("/Probe Request \(([A-Za-z0-9\-\.]+)\)/", $contents, $extraProbes);
-
+var_dump($contents);
 $probes = array_merge($probes, $extraProbes[1]);
 
 $probes = array_unique($probes);
