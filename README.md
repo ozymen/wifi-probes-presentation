@@ -1,11 +1,11 @@
 # Word cloud Representation of Wifi Probes
 
-This tool provides a live word cloud of wifi probes collected by aircrack-ng.
-It can be embedded in presentations to interest people about privacy.
+This tool provides a live word cloud of wifi probes collected by aircrack-ng. It is a webpage that can be rendered for presentations in full screen in browsers. It can also be embedded in presentations.
 
 
-## Example images
+## Screenshot
 
+![Screenshot of Wifi Probes Presentation](docs/screenshot.png)
 
 ## Privacy
 
